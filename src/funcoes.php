@@ -42,9 +42,24 @@ class Funcoes
     Número = 29 resposta = 23
 
      * */
-    public function PrimoAnterior(int $numero): int
-    {
-    }
+            function PrimoAnterior(int $numero, int $resultado): string
+        {
+            $primoanterior = [];
+            $i = $numero + 1;
+            for ($i; $i < $resultado; $i++) {
+                if ($i === 2 || $i % 2 !== 0) {
+                    array_push( $primoanterior, $i);
+                }
+            }
+
+        $resposta = implode(', ',  $primoanterior);
+
+        
+            return (string) " Numero = 10"  . " resposta = " . $resposta;
+            
+        }
+
+        echo primoanterior(6, 9);
 
 
 
