@@ -15,14 +15,20 @@ class Funcoes
 
      * */
     public function SeculoAno(int $ano): int
+
     {
+        $calc = ($ano - 1) / 100;
+        $calc = $calc + 1;
+        return  (int) $calc;
+      
     }
 
+    $seculo = "Século ";
 
-
-
-
-
+    echo $seculo ; 
+    echo  seculoAno ( 1905)  . PHP_EOL;
+    echo $seculo ;
+    echo seculoAno (1700);
 
 
 
@@ -67,6 +73,7 @@ class Funcoes
      * */
     public function SegundoMaior(array $arr): int
     {
+        
     }
 
 
